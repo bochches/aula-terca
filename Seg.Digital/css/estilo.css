@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+/* Resentando o css */
+*{
+    margin: 0; /* Margem */
+    padding: 0; /* Espaço interno */
+}
+
+body{
+    background-color: rgba(128, 128, 172, 0.822); /* Muda a cor do fundo */
+}
+header, main{
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+.titulo-principal{
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Define negrito ou não do texto */
+    font-size: 4em; /* Tamanho da fonte. 4x mais que o padrão */
+    font-family: 'Dancing Script', cursive; /* Define a fonte */
+    text-shadow: 4px 3px 4px blueviolet;
+    line-height: 4px; /* Espaço entre linhas */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-style: italic; /* Texto em itálico */
+    font-size: 17px; /* Tamanho da fonte. Em px fica fixo */
+    text-align: center; /* Centraliza o texto */
+    margin: 15px auto;
+    color: rgb(54, 28, 116);
+}
+
+a{
+    text-decoration: none; /* Desativa/ ativa o sublinhado dos links */
+    color: white;
+    text-shadow: 1px 1px 1px blue;
+    cursor: pointer;
+}
+
+.msg-erro{
+    visibility: hidden; /* Oculta o texto */
+    line-height: 3px;
+}
+
+.menu{
+    list-style: none; /* Desativa as imagens dos marcadores */
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    text-shadow: 2px 2px 2px whitesmoke;
+    display: flex; /* Coloca os elementos filhos inline (em linha) */
+    justify-content: space-around; /* Alinhamento dos elemementos filhos */
+}
+
+.formulario{
+    list-style: none; 
+    line-height: 25px;
+}
+
+.album-fotos{
+    width: 25vw; /* Largura */
+    height: auto; /* Altura: automática */
+    margin: 15px auto;
+    border-width: 1px; /* Largura da borda */
+    border-style: double; /* Estilo da linha da borda */
+    border-color: blue; /* Cor da borda */
+    border-radius: 10px; /* Arredonda a borda */
+    justify-content: center;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer{
+    width: 800px;
+    margin: 0 auto;
+    line-height: 100px; 
+    color: white;
+    text-shadow: 1px 1px 1px blue;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Formatação do formulário */
+input[type=text],
+input[type=email],
+input[type=telefone],
+select{
+    background-color: rgb(224, 221, 216);
+    border: 0; /* Desativa a borda padrão */
+    width: 270px; /*Largura*/
+    padding: 10px; /*Espaço interno ao redor do conteúdo*/
+    border-radius: 10px; /*Arredondamento das caixas*/
+    margin-bottom: 20px; /*Espaço externo ao redor do elemento*/
+    transition: background-color 1s ease;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=telefone]:focus{
+    background-color: rgb(192, 183, 243);
+    color: white;
+}
+
+label{
+    color: rgb(15, 15, 15);
+    text-align: left; /*Alinhamento a esquerda*/
+    margin: 0px; /*Margem zerada para ficar colada aos inputs*/
+    display: block; /*Bloqueia a linha para ser o único elemento*/
+}
+
+input[type=file]{
+    background-color: wheat;
+    display: none; /*Tornar oculto*/
+}
+
+.centralizado{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(224, 213, 198);
+    color: rgb(73, 57, 57);
+    font-size: 1.2em;
+    width: 200px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: darkslateblue;
+    transition: background-color 1s ease; /*Transição cor de fundo*/
+}
+
+/*Botão no estado de passar o mouse por cima*/
+button:hover{
+    background-color: rgb(192, 183, 243); /*Novo valor da cor de fundo ao passar o mouse*/
+    transform: scale(1.1);
+}
+
+.forma-contato{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.forma-contato label{
+    display: inline;
+}
+
+.links-explicacao{
+    width: 5vw; /* Largura */
+    height: auto; /* Altura: automática */
+    margin: 15px auto;
+    border-width: 1px; /* Largura da borda */
+    border-style: double; /* Estilo da linha da borda */
+    border-color: blue; /* Cor da borda */
+    border-radius: 10px; /* Arredonda a borda */
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
